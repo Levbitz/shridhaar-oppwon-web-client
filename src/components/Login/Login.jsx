@@ -6,13 +6,13 @@ import { Link, useNavigate } from "react-router-dom";
 // import "./LoginPage.css";
  import "./LoginPage.css";
 import { auth, } from "../../lib/Firebase/firebase";
-import {
-  // Timestamp,
-  doc,
-  // setDoc,
-  updateDoc,
-} from "firebase/firestore";
-import { signInWithEmailAndPassword } from "firebase/auth";
+// import {
+//   // Timestamp,
+//   doc,
+//   // setDoc,
+//   updateDoc,
+// } from "firebase/firestore";
+// import { signInWithEmailAndPassword } from "firebase/auth";
  import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 // import NavBarTwo from "../../Business/BusinessComponents/NavBarTwo/NavBarTwo";
@@ -39,28 +39,28 @@ function Login() {
   };
 
   const handleSubmit = async (e) => {
-    setClicked(true);
-    e.preventDefault();
-    setData({ ...data, error: null, loading: true });
-    if (!email || !password) {
-      setData({ ...data, error: "All fields are required" });
-    }
-    try {
-      const result = await signInWithEmailAndPassword(auth, email, password);
-      console.log(result);
-    //   await updateDoc(doc(db, "users", result.user.uid), {
+    // setClicked(true);
+    // e.preventDefault();
+    // setData({ ...data, error: null, loading: true });
+    // if (!email || !password) {
+    //   setData({ ...data, error: "All fields are required" });
+    // }
+    // try {
+    //   const result = await signInWithEmailAndPassword(auth, email, password);
+    //   console.log(result);
+    // //   await updateDoc(doc(db, "users", result.user.uid), {
     //     isOnline: true,
     //   });
-      setData({
-        email: "",
-        password: "",
-        error: null,
-        loading: false,
-      });
-     navigate("/profile", { replace: true });
-    } catch (err) {
-      setData({ ...data, error: err.message, loading: false });
-    }
+    //   setData({
+    //     email: "",
+    //     password: "",
+    //     error: null,
+    //     loading: false,
+    //   });
+    //  navigate("/profile", { replace: true });
+    // } catch (err) {
+    //   setData({ ...data, error: err.message, loading: false });
+    // }
   };
   return (
     <>
