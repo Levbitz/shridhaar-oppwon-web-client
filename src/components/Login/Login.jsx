@@ -149,7 +149,7 @@ function Login() {
                         width: "80%",
                         margin: "0 2%",
                       }}
-                      className="valign-wrapper btn primary_bg btn-small "
+                      className="valign-wrapper btn gradient__bg btn-small "
                       disabled={loading}
                     >
                       {clicked ? (

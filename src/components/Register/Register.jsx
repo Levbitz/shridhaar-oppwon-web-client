@@ -160,6 +160,7 @@ function Register() {
                               paddingLeft: "1rem",
                               fontSize: "0.9rem",
                             }}
+                            className="grey lighten-5"
                             name="email"
                             value={email}
                             onChange={handleChange}
@@ -178,6 +179,7 @@ function Register() {
                               paddingLeft: "1rem",
                               fontSize: "0.9rem",
                             }}
+                            className="grey lighten-5"
                             name="password"
                             value={password}
                             onChange={handleChange}
@@ -218,7 +220,7 @@ function Register() {
                              width: "100%",
                             // margin: "0 auto",
                           }}
-                          className=" btn clickable  valign-wrapper btn primary_bg btn-small "
+                          className=" btn clickable  valign-wrapper btn gradient__bg btn-small "
                           disabled={loading}
                         >
                           {loading ? "Registering ..." : "Register"}

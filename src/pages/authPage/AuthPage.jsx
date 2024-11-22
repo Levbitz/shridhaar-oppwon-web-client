@@ -4,13 +4,15 @@ import Register from '../../components/Register/Register'
 
 function AuthPage() {
   return (
-    <div style={{
+    <div 
+    className='gradient__bg'
+    style={{
         // display:"flex",
         // justifyContent:"center",
         // alignItems:"center",
-        // height:"100vh",
+         height:"100vh",
         
-        // fontWeight:"bold",
+    // fontWeight:"bold",
        
         
     }}>
